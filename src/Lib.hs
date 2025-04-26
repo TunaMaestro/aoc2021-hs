@@ -6,6 +6,7 @@ module Lib
 where
 
 import Day3
+import Day4
 import Solution
 import Text.Printf (printf)
 
@@ -24,6 +25,7 @@ readDayFile inputType day = readFile ("puzzles/" ++ inputFolder inputType ++ ('/
 runDay :: Day -> Maybe Solution
 runDay day = case intDay of
   3 -> Just Day3.solution
+  4 -> Just Day4.solution
   _ -> Nothing
   where
     intDay = read day :: Int
